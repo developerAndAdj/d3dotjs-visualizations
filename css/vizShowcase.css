@@ -1,0 +1,310 @@
+/********************************************************
+* vizShowcase.css
+* Author: Robert Felder
+* Version: 1.0
+* Description:
+* Changelog: 4.20.2014 - Initial Creation
+********************************************************/
+.reset {
+    cursor: pointer;
+}
+
+#arcVisPopup, #correlationPopup,  #chordVizPopup, #popBarPopup {
+    width: auto; /*205px;*/
+    background: #fff;
+    z-index: 20;
+    position: absolute;
+    border: 1px solid #ccc;
+    min-width: 205px;
+    display:none;
+}
+
+#arcVisPopup, #correlationPopup,  #chordVizPopup {
+    max-width: 250px;
+}
+
+#arcVisPopup h4, #correlationPopup h4,  #chordVizPopup h4, #popBarPopup h4 {
+    font-size: 1.5em;
+}
+
+#arcVisPopup p, #correlationPopup p, #chordVizPopup p, #chordVizPopup div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#arcVisPopup p, #correlationPopup p, #chordVizPopup p, #chordVizPopup ul, /*#chordVizPopup div,*/ #popBarPopup p {
+    font-size: 1em;
+}
+
+#sortRolodex, #arcReset {
+    position: absolute;
+    font-size: 1em; /*0.875em;*/
+}
+
+#sortRolodex legend {
+    font-size: 1.3em;
+}
+
+#sortRolodex {
+    /*position: absolute;*/
+    top: 300px; /*50px;*/
+    /*margin-left: 50px;*/
+    right: 146px;
+}
+
+/* Correlation legend/menu style */
+#sortRolodex button {
+    height: 18px;
+    width: 18px;
+    vertical-align: middle;
+    border-color: #000;
+    cursor: pointer;
+}
+
+#sortRolodex label {
+    margin-left: 5px;
+    display: inline-block;
+    width: 83px;
+}
+
+#sortRolodex li {
+    margin: 3px 0;
+}
+
+#sortRolodex .aToZBtn {
+    background-color: #fff;
+}
+
+#sortRolodex .ind1Btn {
+    background-color: #883630;
+}
+
+#sortRolodex .ind5Btn {
+    background-color: #1E6489;
+}
+
+#sortRolodex .ind4Btn {
+    background-color: #333333;
+}
+
+#sortRolodex ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+/* End Correlation legend/menu style */
+
+/* Begin Dendrogram without children styles */
+#dendroReset {
+    float: right;
+    font-size: 1.5em;
+}
+/* End Dendrogram without children styles */
+
+/* Dendrogram with children styles */
+.link {
+    fill: none;
+    stroke: #888;
+}
+
+#dendro2Reset {
+    float: right;
+    font-size: 1.5em;
+}
+
+/* Begin Stream Graph Styles */
+#corrNav ul li {
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#corrNav label {
+    cursor: pointer;
+}
+
+#corrNav h4 {
+    margin: 14px 0px 5px 0px;
+}
+
+#corrNav ul {
+    margin: 0;
+}
+
+#corrNav ul li {
+    padding: 2px 0 2px 5px;
+    margin: 3px 0px;
+    font: 0.875em Arial, sans-serif;
+}
+
+#corrNav {
+    /*float: left;*/
+    width: 166px;
+}
+
+#corrNav button {
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
+    /*border-color: #000;*/
+    cursor: pointer;
+}
+
+#corrNav label {
+    margin-left: 5px;
+    display: inline-block;
+    /*width: 110px;*/
+    vertical-align: middle;
+}
+
+#corrNav {
+    margin: 0px 0px 0px 25px;
+}
+
+#corrNav ul {
+    /*margin:0;*/
+    padding:0;
+    list-style:none;
+}
+
+.aToZBtn {
+    background-color: #fff;
+}
+
+.ind1Btn {
+    background-color: #883630;
+    border-color: #000;
+}
+
+.ind3Btn {
+    background-color: #948500;/*#333;*/
+    border-color: #000;
+}
+
+.ind4Btn {
+    background-color: #006600;/*#333333;*/
+    border-color: #000;
+}
+
+#fullStreamViz {
+    /*margin: 0 auto;*/
+    /*float: left;*/
+    width: 1060px;
+    /*height: 690px;*/
+}
+
+/*#streamViz {
+    float: right;
+}*/
+
+#fullStreamViz text {
+    font: 1em Arial,sans-serif;
+}
+
+#fullStreamViz line {
+    stroke: #000;
+    opacity: 0.15;
+    stroke-width: 2;
+}
+
+#correlationPopup ul, #chordVizPopup ul {
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0 0 0 10px;
+}
+
+/* End Stream Graph Styles */
+
+/* Begin Chord Diagram Styles */
+/* Chord Diagram Specific Styles */
+#chordReset {
+    float: right;
+    font-size: 1.5em;
+}
+
+#chordBar {
+    height: 762px;
+    width: 1200px;
+    margin: auto;
+}
+
+#chordViz {
+    /*float: left;*/
+    /*margin: 0px 0px 0px 100px;*/
+    width: 755px; /*770px;*/
+}
+
+#chordVizLabel {
+    left: 20px;
+    top: 742px;
+}
+
+#chordVizLabel, #stackedBarVizLabel {
+    float: left;
+    position: relative;
+    font-weight: bold;
+}
+
+/*#chordViz .groups {
+    cursor: pointer;
+}*/
+
+.groups text {
+    font: bold normal 0.875em Arial, sans-serif;
+}
+/* End Chord Diagram Styles */
+
+/* Begin Stacked Bar Styles */
+#popBarPopup {
+    margin: auto;
+}
+
+#popBarPopup p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#stackedBarNav {
+    /*float: left;*/
+    /*margin-left: -170px;*/
+    width: 146px;
+    margin-top: 80px;
+    border: 1px solid #ddd;
+    font: 0.875em Arial,sans-serif;
+}
+
+#stackedBarNav ul {
+    list-style-type: none;
+}
+
+#stackedBarNav li {
+    margin: 5px 0;
+}
+
+#popLeg {
+    background-color: #888;
+}
+
+#workStudyLeg {
+    background-color: #4387ff;
+}
+
+.popWsLegEle {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+#popBarViz .popYaxis line {
+    stroke: #ddd;
+}
+
+#popBarViz .popXaxis text, #popBarViz .popYaxis text {
+    font: 0.75em Arial,sans-serif;
+}
+
+#stackedBarViz {
+    margin: 20px 0 0;
+}
+
+/* End Stacked Bar Styles */
